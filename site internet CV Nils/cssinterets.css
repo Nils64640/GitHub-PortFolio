@@ -1,0 +1,177 @@
+*{
+
+  margin: 0;  
+  padding: 0; 
+  font-family: sans-serif;
+}
+
+.background{
+
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backgroundinterets.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+
+  width: 200px;
+  cursor: pointer;
+}
+
+nav ul li{
+
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+
+  color: skyblue;
+}
+
+
+span{
+
+  color: #049be0;
+}
+
+.images:hover .shape{
+
+  bottom: 40px;
+}
+
+.images:hover .boy{
+
+  left: 45%;
+}
+
+nav{
+
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+
+  width: 200px;
+  cursor: pointer;
+}
+
+nav ul li{
+
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+
+  color: skyblue;
+}
+
+span{
+
+  color: #049be0;
+}
+
+.cards {
+
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .cards {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .cards {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card {
+  top: 150px;
+  position: relative;
+  padding-bottom: 150%;
+}
+
+.card-background {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform-origin: center;
+  transition: .2s;
+}
+
+.card:hover .card-background {
+  transform: scale(1.05) translateZ(0);
+}
+
+.cards:hover > .card:not(:hover) .card-background {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-content {
+  padding: 24px;
+  position: absolute;
+  font-family: arial, sans-serif;
+}
+
+.card-content p {
+  color: rgba(255, 255, 255, .6);
+  font-size: .9rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card-content h3 {
+  color: rgba(255, 255, 255, .9);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mes compétences</title>
+	<link rel="stylesheet" href="csscompetences.css">
+    <link rel="icon" type="image/png" sizes="16*16" href="icon.png" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+<body>
+
+  <div class="wrapper">
+      <div class="card">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">HTML & CSS</div>
+      </div>
+      <div class="card js">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">C++</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">Réseau</div>
+      </div>
+    </div>
+    <script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.70,
+        fill: {gradient: ['#4a3fe0', '#4a3fe0']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".js .bar").circleProgress({
+        value: 0.70
+      });
+      $(".react .bar").circleProgress({
+        value: 0.50
+      });
+    </script>
+
+	<div class="background">
+
+        <div class="container">
+    <div class="center">
+      <button class="btn" onclick="history.go(-1)"> <!-- Merci Antoine -->
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span >Retour</span>
+      </button>
+
+	</div>
+
+</body>
+</html>

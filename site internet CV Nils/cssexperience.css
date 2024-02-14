@@ -1,0 +1,351 @@
+*{
+
+	margin: 0;	
+	padding: 0;	
+	font-family: sans-serif;
+}
+
+.background{
+
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backgroundexperience.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+nav{
+
+	display: flex;
+	width: 84%;
+	margin: auto;
+	padding: 20px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+
+	width: 200px;
+	cursor: pointer;
+}
+
+nav ul li{
+
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a{
+
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+
+	color: skyblue;
+}
+
+span{
+
+	color: #049be0;
+}
+
+.images:hover .shape{
+
+	bottom: 40px;
+}
+
+.images:hover .boy{
+
+	left: 45%;
+}
+
+nav{
+
+	display: flex;
+	width: 84%;
+	margin: auto;
+	padding: 20px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+
+	width: 200px;
+	cursor: pointer;
+}
+
+nav ul li{
+
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a{
+
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+
+	color: skyblue;
+}
+
+span{
+
+	color: #049be0;
+}
+
+.card {
+
+	position: relative;
+	right: -540px;
+	top: 80px;
+  width:240px;
+  height:320px;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.card-inner {
+
+  top: 100px;
+  position:relative;
+  width: 100%;
+  height:100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position:absolute;
+  height:100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding:16px;
+  border-radius:8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-front {
+  background-image:url('https://jardinage.lemonde.fr/images/dossiers/2018-10/tableau-electrique-093332.jpg');
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card-front:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: linear-gradient(0deg, black, transparent);
+}
+
+.card-front .card-content {
+  z-index: 1;
+  color:white;
+}
+
+.card-front .card-content p {
+  color:#ececec;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-image:url(https://static.vecteezy.com/ti/vecteur-libre/p1/575893-technologie-de-fond-abstrait-polygone-de-couleur-blanche-et-grise-moderne-illustrationle-vectoriel.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back .card-image {
+  width:120px;
+  height:120px;
+  margin:0 auto;
+  border:solid 1px #cecece;
+  border-radius:100%;
+  background-image:url('https://bni-adour.fr/web/open/appsCmsImageDownload?imageObjectId=5f4bad57fe17fa0001cd5a9d');
+  background-size:cover;
+  background-position:center center;
+}
+
+.card-back p {
+  margin-top:12px;
+}
+
+.card-back .card-icons {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back .card-icons a {
+  font-size:18px;
+  color:white;
+  background:black;
+  width:42px;
+  height:42px;
+  border-radius:100%;
+  margin:8px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:opacity .2s;
+}
+
+.card-back .card-icons a:hover {
+  cursor:pointer;
+  opacity:0.7;
+}
+
+.card-front {
+  transition: opacity .6s;
+}
+
+.card:hover .card-front {
+  opacity:0;
+}
+
+.card2 {
+
+	position: relative;
+	top: -240px;
+	left: 1000px;
+  width:240px;
+  height:320px;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.card-inner2 {
+
+  top: 100px;
+  position:relative;
+  width: 100%;
+  height:100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card2:hover .card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.card-front2, .card-back2 {
+  position:absolute;
+  height:100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding:16px;
+  border-radius:8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-front2 {
+  background-image:url('https://www.pagesjaunes.fr/media/agc/76/c1/70/00/00/ef/8c/ff/d0/6a/621f76c1700000ef8cffd06a/621f76c1700000ef8cffd06b.png');
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card-front2:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: linear-gradient(0deg, black, transparent);
+}
+
+.card-front2 .card-content2 {
+  z-index: 1;
+  color:white;
+}
+
+.card-front2 .card-content2 p {
+  color:#ececec;
+}
+
+.card-back2 {
+  transform: rotateY(180deg);
+  background-image:url(https://static.vecteezy.com/ti/vecteur-libre/p1/575893-technologie-de-fond-abstrait-polygone-de-couleur-blanche-et-grise-moderne-illustrationle-vectoriel.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back2 .card-image2 {
+  width:120px;
+  height:120px;
+  margin:0 auto;
+  border:solid 1px #cecece;
+  border-radius:100%;
+  background-image:url('https://media.sudouest.fr/3207901/1200x-1/so-5a4af08a66a4bdcb7162c798-ph0.jpg');
+  background-size:cover;
+  background-position:center center;
+}
+
+.card-back2 p {
+  margin-top:12px;
+}
+
+.card-back2 .card-icons2 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back2 .card-icons2 a {
+  font-size:18px;
+  color:white;
+  background:black;
+  width:42px;
+  height:42px;
+  border-radius:100%;
+  margin:8px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:opacity .2s;
+}
+
+.card-back2 .card-icons2 a:hover {
+  cursor:pointer;
+  opacity:0.7;
+}
+
+.card-front2 {
+  transition: opacity .6s;
+}
+
+.card2:hover .card-front2 {
+  opacity:0;
+}
